@@ -1,0 +1,577 @@
+{% extends "base.html" %}
+{% load wagtailimages_tags %}
+
+{% load wagtailcore_tags %}
+{% block content %}
+<!-- Arrows Nav -->
+<div class="lmpixels-arrows-nav">
+  <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+  <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+</div>
+<!-- End Arrows Nav -->
+      <div class="content-area">
+        <div class="animated-sections">
+          <!-- Home Subpage -->
+          <section data-id="home" class="animated-section start-page">
+            <div class="section-content vcentered">
+
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="title-block">
+                      <h2>Giorgio Demarchi</h2><br>
+                      <h4>I believe we can leverage technology in a much better way than we are doing today. On this corner of the world wide web, I reflect on that.</h4>
+                    </div>
+                    <div class="header-buttons">
+                      <a href="{% pageurl latest_post.first %}" target="_blank" class="btn btn-primary">Read latest article</a>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+            </div>
+          </section>
+          <!-- End of Home Subpage -->
+
+          <!-- About Me Subpage -->
+          <section data-id="about-me" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>About <span>Me</span></h2>
+              </div>
+
+              <!-- Personal Information -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                <p>
+                    I wasn't exactly a model student in high school, but I used to like books. A lot, actually. At first, it was just a way to escape a disappointing reality. I liked philosophy.
+                    The kind that comes from life experiences and use a simple yet brilliant language to give actionable advice. The older the book was, the better.
+                    Philosophy problems don't change through time, but modernity has clouded our interpretation of them.
+                    <br><br>Those old philosophy books opened my eyes to a concerning trend. The business models that moved billions of lives online,
+                    based on using platforms for free in exchange for navigation data, were backfiring on a whole generation. It was 2017. Cambridge Analytica scandal came out.
+                    I was deeply disappointed and I needed to understand how those models worked. This is how my passion for math, technology and business began: a disappointment that later
+                    translated in the desire to make a change, because through my studies I realized how many exciting solutions to real-world problems can be found when integrating these fields.
+                    <br><br>Life has shuttered me around a few cities in Europe. I laid down interdisciplinary engineering foundations between Milan and The Netherlands, while exploring with
+                    particular intensity complex systems, data science and modelling. I worked on making sense of how the Lithium-Ion battery industry is developing in The Old Continent while the
+                    energy crisis was going on, giving me the chance to gain new perspectives on energy systems' dynamics.  During my time in Amazon, I worked in Business Intelligence for the
+                    Transportation department, and had the chance to mess around with how packages are delivered to your door (sorry for the delays I might have caused).
+                    <br><br> Before I leave for Boston to pursue a one-year master in Data Science at MIT, I am currently living my best life: alternating the pursuit of intellectual Enlightenment
+                    with the Lindy Mediterranean life.
+                    <br><br> This must not be considered my professional page, as I may digress into not serious stuff. It is just my little spot on the World Wide Web (version 2.0) where I share what I work on in the format I prefer. Also, I might or might not talk about cryptocurrencies related stuff, as they give me hope for a future in which the value created from internet interactions is better distributed. I’m not a financial advisor and it has in fact been long rumoured that I am actually an idiot.
+                </p>
+                </div>
+              </div>
+              <div class="white-space-50"></div>
+              <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <div class="info-list">
+                      <ul>
+
+                        <li>
+                          <span class="title">Current Location</span>
+                          <span class="value">Milan, Italy</span>
+                        </li>
+
+                        <li>
+                          <span class="title">E-mail</span>
+                          <span class="value">giorgio_demarchi@yahoo.com</span>
+                        </li>
+
+                        <li>
+                          <span class="title">Phone</span>
+                          <span class="value">+39 3482465451</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+              </div>
+
+
+            </div>
+          </section>
+          <!-- End of About Me Subpage -->
+
+          <!-- Resume Subpage -->
+          <section data-id="resume" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Resume</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+
+                  <div class="block-title">
+                    <h3>Education</h3>
+                  </div>
+
+                  <div class="timeline timeline-second-style clearfix">
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2023 - 2024</h5>
+                              <span class="item-company"> Massachussets Institute of Technology <br>
+                                  <br><span class="item-company"><!--<img style="max-width: 30%; display: block; margin-left: auto; "src="https://i0.wp.com/albertfattal.com/wp-content/uploads/2018/03/2000px-MIT_logo.svg-1.png?fit=2000%2C1034&amp;ssl=1">-->
+                              </span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">[Incoming Fall '23] Master of Business Analytics</h4>
+                              <p>Coursework focused on: Machine Learning Under Modern Optimization Lens, Optimization Methods, Advanced Analytics Edge.</p>
+
+                            </div>
+                          </div>
+
+                                          <div class="timeline-item clearfix">
+                                            <div class="left-part">
+                                              <h5 class="item-period">2021 - 2022<br></h5>
+                                              <span class="item-company">Delft University of Technology <br> <br><!--<img style="max-width: 35%; display: block; margin-left: auto; " src="https://www.cardsonline.info/wp-content/uploads/2019/01/TU_Delft_logo_wit2.png"> --></span>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="right-part">
+                                              <h4 class="item-title">Bachelor of Science, Industrial Engineering</h4>
+                                              <p>Coursework focused on: Modelling, Data Science, Energy Systems, Supply Chain Engineering</p>
+                                                                                     </div>
+                                          </div>
+                                          <div class="timeline-item clearfix">
+                                            <div class="left-part">
+                                              <h5 class="item-period">2020 - 2023</h5>
+                                              <span class="item-company">Massachussets Institute of Technology <br><br><!--<img style="max-width: 30%; display: block; margin-left: auto;" src="https://i1.wp.com/milano.securitybsides.eu/wp-content/uploads/2018/03/polimi.png?resize=150%2C150">-->
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="right-part">
+                                              <h4 class="item-title">Micromaster, Supply Chain Management</h4>
+                                              <p>Coursework focused on: Supply Chain Analytics, Supply Chain Design, Supply Chain Technology and Systems.</p>                                      </div>
+                                          </div>
+                  <div class="timeline-item clearfix">
+                                            <div class="left-part">
+                                              <h5 class="item-period">2019 - 2022</h5>
+                                              <span class="item-company">Politecnico di Milano <br><br><!--<img style="max-width: 30%; display: block; margin-left: auto;" src="https://i1.wp.com/milano.securitybsides.eu/wp-content/uploads/2018/03/polimi.png?resize=150%2C150">-->
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="right-part">
+                                              <h4 class="item-title">Bachelor of Science, Industrial Engineering</h4>
+                                              <p>Coursework focused on: Statistics and Applied Math, Physics and Energy Systems, Computer Science and Information Systems, Supply Chain and Enterprise Strategic Decision Making.</p>
+                                                                                        </div>
+                                          </div>
+
+
+                                        </div>
+
+                  <div class="white-space-50"></div>
+
+                  <div class="block-title">
+                    <h3>Experience</h3>
+                  </div>
+
+                  <div class="timeline timeline-second-style clearfix">
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2022 - 2023</h5>
+                        <span class="item-company">Amazon</span>
+                        <span class="item-company"><i>Luxembourg</i></span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Business Intelligence Intern</h4>
+                        <div class="container">
+                            <ul>
+                                <li>Main project: optimization of the mapping between the level of service offered to the customer and the level of service
+                                    offered by carriers that delivered $x0MM+ in savings and earned VP visibility</li>
+                                <li>Secondary Project: developed a data pipeline that enabled the use of a complex simulation tool for the establishment
+                                    of Carrier Mix Plan 2023</li>
+                                <li>Other Project: Developed an attainment calculation logic in partnership with Finance, to evaluate the impact on
+                                    economies of scale of dispatching volume in Amazon 1P transportation services</li>
+                            </ul>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2022</h5>
+                        <span class="item-company">Bosch Rexroth</span>
+                        <span class="item-company"><i>The Netherlands</i></span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Business Development Intern</h4>
+                        <div class="container">
+                            <ul>
+                                <li>Analysis of the value chain of Lithium-ion batteries in Europe, at every stage</li>
+                                <li>Interviewed more than 20 logistics and manufacturing operators in the European lithium-ion battery industry</li>
+                                <li>Developed a report containing economic outlook, supply chain analysis, opportunities and competition intelligence
+                                </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2020 - 2021</h5>
+                        <span class="item-company">PoliMi Industrial Club</span>
+                        <span class="item-company"><i>Milan, Italy</i></span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Associate</h4>
+
+                        <p>Planning of in-company training and events. Wrote 20+ articles to divulgate cutting-edge industrial innovations.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2017 - 2019</h5>
+                        <span class="item-company">Freelance</span>
+                        <span class="item-company"><i>Como, Italy</i></span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Web Developer</h4>
+                        <p>While in high school I developed web developing skills leveraging Python, Django, HTML, Bootstrap, CSS. Deployed 3+ sites for restaurants (none is still online).
+                        Years later I refreshed my knowledge to code this website. It was an hell. </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Skills & Certificates -->
+</div>
+                  <div class="white-space-50"></div>
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                          <!-- Coding Skills -->
+                          <div class="block-title">
+                            <h3>Tech <span>Skills</span></h3>
+                          </div>
+
+                          <div class="skills-info skills-second-style">
+                              <div class="skill clearfix">
+                                <h4>Python</h4>
+                                <div class="skill-value">100%</div>
+                              </div>
+                              <div class="skill-container skill-7">
+                                <div class="skill-percentage"></div>
+                              </div>
+                              <div class="skill clearfix">
+                                <h4>SQL</h4>
+                                <div class="skill-value">100%</div>
+                              </div>
+                              <div class="skill-container skill-7">
+                                <div class="skill-percentage"></div>
+                              </div>
+                              <!-- Skill 6 -->
+                              <div class="skill clearfix">
+                                <h4>Tableau</h4>
+                                <div class="skill-value">95%</div>
+                              </div>
+                              <div class="skill-container skill-5">
+                                <div class="skill-percentage"></div>
+                              </div>
+
+                              <div class="skill clearfix">
+                                <h4>Amazon Web Services</h4>
+                                <div class="skill-value">85%</div>
+                              </div>
+                              <div class="skill-container skill-6">
+                                <div class="skill-percentage"></div>
+                              </div>
+                              <!-- End of Skill 6 -->
+
+
+                            <!-- Skill 8 -->
+                            <div class="skill clearfix">
+                              <h4>HTML/CSS</h4>
+                              <div class="skill-value">50%</div>
+                            </div>
+                            <div class="skill-container skill-8">
+                              <div class="skill-percentage"></div>
+                            </div>
+                            <div class="skill clearfix">
+                              <h4>R</h4>
+                              <div class="skill-value">50%</div>
+                            </div>
+                            <div class="skill-container skill-8">
+                              <div class="skill-percentage"></div>
+                            </div>
+                            <div class="skill clearfix">
+                              <h4>C</h4>
+                              <div class="skill-value">50%</div>
+                            </div>
+                            <div class="skill-container skill-8">
+                              <div class="skill-percentage"></div>
+                            </div>
+                            <div class="skill clearfix">
+                              <h4>Julia</h4>
+                              <div class="skill-value">30%</div>
+                            </div>
+                            <div class="skill-container skill-9">
+                              <div class="skill-percentage"></div>
+                            </div>
+                            <!-- End of Skill 8 -->
+
+                          </div>
+                          <!-- End of Coding Skills -->
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                          <!-- Knowledges -->
+                          <div class="block-title">
+                            <h3>Knowledges</h3>
+                          </div>
+
+                          <ul class="knowledges">
+                            <li>Machine Learning</li>
+                            <li>BI Tools</li>
+                            <li>Systems Analytics</li>
+                            <li>Supply Chain Engineering</li>
+                            <li>Problem-Solving</li>
+                            <li>Technical Communication</li>
+
+                          </ul>
+                          <!-- End of Knowledges -->
+                      </div>
+                      <div class="white-space-10"></div>
+                  </div>
+
+
+
+
+                <!-- End of Skills & Certificates -->
+
+
+              <div class="white-space-50"></div>
+
+              <!-- Certificates -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="block-title">
+                    <h3>Certificates</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- Certificate 1 -->
+                <div class="col-xs-12 col-sm-6">
+                  <div class="certificate-item clearfix">
+                    <div class="certi-logo">
+                      <img src="https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png" alt="logo">
+                    </div>
+
+                    <div class="certi-content">
+                      <div class="certi-title">
+                        <h4>AWS Cloud Practitioner</h4>
+                      </div>
+                      <div class="certi-id">
+                        <span>Amazon Web Services</span>
+                      </div>
+                      <div class="certi-date">
+                        <span>Dec 2022</span>
+                      </div>
+                      <div class="certi-company">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Certificate 1 -->
+
+                <!-- Certificate 2 -->
+                <div class="col-xs-12 col-sm-6">
+                  <div class="certificate-item clearfix">
+                    <div class="certi-logo">
+                      <img src="https://i.pinimg.com/736x/4a/7b/ae/4a7bae7b68822a3d1de168c38265d6ae.jpg" alt="logo">
+                    </div>
+
+                    <div class="certi-content">
+                      <div class="certi-title">
+                        <h4>Machine Learning</h4>
+                      </div>
+                      <div class="certi-id">
+                        <span>Stanford University</span>
+                      </div>
+                      <div class="certi-date">
+                        <span>Apr 2020</span>
+                      </div>
+                      <div class="certi-company">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Certificate 2 -->
+                <div class="col-xs-12 col-sm-6">
+                  <div class="certificate-item clearfix">
+                    <div class="certi-logo">
+                      <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_bfd45dae8ae41f74672a5c980c107fd5/datacamp.jpg" alt="logo">
+                    </div>
+
+                    <div class="certi-content">
+                      <div class="certi-title">
+                        <h4>Intermediate SQL</h4>
+                      </div>
+                      <div class="certi-id">
+                        <span>DataCamp</span>
+                      </div>
+                      <div class="certi-date">
+                        <span>Ago 2022</span>
+                      </div>
+                      <div class="certi-company">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="certificate-item clearfix">
+                    <div class="certi-logo">
+                      <img src="https://svff.info/wp-content/uploads/2018/12/udemy-1-logo-png-transparent-768x630.png" alt="logo">
+                    </div>
+
+                    <div class="certi-content">
+                      <div class="certi-title">
+                        <h4>Web Development</h4>
+                      </div>
+                      <div class="certi-id">
+                        <span>Udemy</span>
+                      </div>
+                      <div class="certi-date">
+                        <span>Mar 2020</span>
+                      </div>
+                      <div class="certi-company">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Certificates -->
+            </div>
+          </section>
+          <!-- End of Resume Subpage -->
+
+          <!--
+          <section data-id="portfolio" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Portfolio</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+
+                  <div class="portfolio-content">
+
+                    <div class="portfolio-grid three-columns" style="overflow: auto">
+                        {% for portfolio in portfolio_post %}
+                          <div class="portfolio-item-img" style="overflow: auto">
+                            {% image portfolio.specific.feed_image fill-400x300 %}
+                            <a href="{% pageurl portfolio %}" title="Portfolio Project"></a>
+                          </div>
+                          <i class="fa fa-volume-up"></i>
+                          <h4 class="name">{{ portfolio.title }}</h4>
+                          <span class="category">SoundCloud</span>
+
+                        {% endfor %}
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+           -->
+
+          <!-- Blog Subpage -->
+          <section data-id="portfolio" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Portfolio</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="blog-masonry two-columns clearfix">
+
+                      {% for work in portfolio_post %}
+
+                      <div class="item post-3">
+                        <div class="blog-card">
+                          <div class="media-block">
+                            <a href="{% pageurl work %}">
+                              {% image work.specific.feed_image fill-400x150 %}
+                              <div class="mask"></div>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <div class="post-date">{{ work.specific.date }}</div>
+                            <a href="{% pageurl work %}">
+                              <h4 class="blog-item-title">{{ work.specific.title }}</h4>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                        {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Blog Subpage -->
+
+          <!-- Blog Subpage -->
+          <section data-id="blog" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Blog</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="blog-masonry two-columns clearfix">
+
+                      {% for post in blog_post %}
+
+                      <div class="item post-3">
+                        <div class="blog-card">
+                          <div class="media-block">
+                            <div class="category">
+                              <a href="{% pageurl post %}" title="View all posts in Design">{{ post.title }}</a>
+                            </div>
+                            <a href="{% pageurl post %}">
+                              {% image post.specific.feed_image fill-400x150 %}
+                              <div class="mask"></div>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <div class="post-date">{{ post.specific.date }}</div>
+                            <a href="{% pageurl post %}">
+                              <h4 class="blog-item-title">{{ post.specific.title }}</h4>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                        {% endfor %}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </section>
+          <!-- End of Blog Subpage -->
+
+        </div>
+      </div>
+
+
+{% endblock %}
