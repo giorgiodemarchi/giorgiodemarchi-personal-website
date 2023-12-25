@@ -9,7 +9,10 @@
 
     <article class="post">
 
-      <div class="post-thumbnail">{% image page.feed_image original min-200x300 %}</div>
+      <div class="post-thumbnail">
+        {% image page.feed_image original as img %}
+        <img src="{{ img.url }}" alt="{{ img.alt }}" />
+      </div>
 
       <div class="post-content">
         <!-- /Entry header -->

@@ -72,16 +72,35 @@ h2 {
     font-size: 27px;
 }
 h3 {
-    font-size: 21px;
+  font-size: 27px; /* larger font size */
+  font-weight: bold; /* bolder font */
+  color: #ffffff; /* darker color for contrast */
+  margin-top: 1em; /* more space on top */
+  margin-bottom: 0.5em; /* more space at the bottom */
+  padding-bottom: 0.25em; /* space at the bottom inside the title */
+  border-bottom: 2px solid #eaeaea; /* subtle bottom border */
+  text-transform: uppercase; /* capital letters */
+  text-align: center; /* center-aligned */
 }
+
 h4 {
-    font-size: 18px;
+  font-size: 1.3em; /* Adjust as needed */
+  font-weight: 600; /* Slightly bolder than normal but not as bold as H2 might be */
+  color: #ffffff; /* A dark grey that stands out without being too bold */
+  margin-top: 1em; /* More space above the H4 */
+  margin-bottom: 0.5em; /* More space below the H4 */
+  padding: 0.25em 0; /* Padding inside the H4 area */
+  text-transform: capitalize; /* Each word starts with a capital letter */
+  letter-spacing: 0.05em; /* Adjust the letter spacing */
+  text-align: left; /* Align to the left or center as per your design */
 }
+
 h5 {
-    font-size: 16px;
+  font-size: 16px;
 }
+
 h6 {
-    font-size: 14px;
+    font-size: 1.5rem;
 }
 
 a {
@@ -562,6 +581,10 @@ input[type="submit"]:focus {
   -moz-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   -ms-transform: none;
+}
+
+.section-content h5 {
+  text-align: center; /* This centers the text */
 }
 
 .single-page-content {
@@ -1235,6 +1258,7 @@ textarea.form-control, textarea.form-control:focus {
 .timeline-second-style .item-title {
   font-size: 16px;
   margin-bottom: 3px;
+  margin-top: 1px;
 }
 
 .timeline-second-style .item-period {
@@ -1242,6 +1266,15 @@ textarea.form-control, textarea.form-control:focus {
   margin: 3px 0;
   font-size: 14px;
   line-height: 1.4em;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-second-style .item-period {
+    display: block; 
+    width: auto; 
+    text-align: left; 
+  }
 }
 
 .timeline-second-style .item-company {
@@ -2154,12 +2187,79 @@ textarea.form-control, textarea.form-control:focus {
 /* ------------------------------------------------------------
 7. Single Page (Blog Posts, 404 etc.)
 ------------------------------------------------------------ */
-.post-thumbnail {
-  background: #b2b2b2;
+
+
+ .entry-content {
+  text-align: justify;
+  text-align-last: left; 
+}
+
+
+
+/* If images are not wrapped in a figure tag */
+.entry-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto; /* adds space above and below the image */
+  border: 1px solid #ddd; /* adds a border */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* adds a subtle shadow */
+}
+
+/* Responsive image styles */
+img {
+  max-width: 100%; /* Image can be up to 100% of its container width */
+  height: auto; /* Height is set to auto to maintain aspect ratio */
+  object-fit: contain; /* The image will be scaled to be as large as possible, without cropping or stretching */
+}
+
+/* If images are wrapped in a figure tag by Wagtail */
+.entry-content .richtext-image,
+.entry-content figure {
+  text-align: center; /* This centers the figure element itself */
+}
+
+.entry-content .richtext-image img,
+.entry-content figure img {
+  display: inline; /* This changes the image display to inline, allowing text-align to work */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* If you're using figure and figcaption */
+.entry-content figure {
+  margin: 20px auto; /* adds space around the figure */
+  text-align: center; /* centers the figure content */
+}
+
+.entry-content figcaption {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+ .post-thumbnail {
   display: block;
   position: relative;
-  width: 100%;
+  width: 100%; /* full width of its parent */
+  height: 350px; /* adjust this value to fit your design */
+  overflow: hidden; /* ensure no part of the image spills out */
+  background: #b2b2b2; /* fallback color */
   z-index: 0;
+}
+
+.post-thumbnail img {
+  width: 100%; /* ensures the image is as wide as its container */
+  height: 100%; /* ensures the image covers the height fully */
+  object-fit: cover; /* cover the container without stretching */
+  display: block; /* removes bottom space associated with inline elements */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .post-thumbnail {
+    height: 200px; /* smaller height for mobile screens */
+  }
 }
 
 .single-page-content .post-content {
@@ -2554,6 +2654,7 @@ blockquote {
   .section-title-block.first-style .section-description {
     margin: 7px 0 0;
     width: 100%;
+    text-align: center;
   }
 
   .portfolio-grid figure {
@@ -2577,6 +2678,7 @@ blockquote {
     position: relative;
     display: block;
   }
+
 
   .timeline-second-style .left-part {
     width: 100%;
